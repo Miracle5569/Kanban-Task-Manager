@@ -8,11 +8,11 @@ interface Task {
 interface BoardColumnTask {
   boardId: string
   columnName: string
-  tasks: Array<Task>
+  tasks?: Array<Task>
 }
 
 export type Board = {
   boardId: string
   boardName: string
-  boardColumn: Array<BoardColumnTask>
+  boardColumn?: Array<BoardColumnTask>
 }

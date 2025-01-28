@@ -5,9 +5,9 @@ import type { Board } from '@/composable/types'
 
 export const useBoardStore = defineStore('board', () => {
   //Start is initial.
-  const kanbanBoard = ref<Array<Board>>([])
+  const kanbanBoard = ref<Array<Board | undefined>>([])
 
-  function addNewBoard(newBoard: Board) {
+  function addNewBoard(newBoard: Board | undefined) {
     kanbanBoard.value.push(newBoard)
   }
 

@@ -54,3 +54,14 @@
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
+
+@mixin action-button($width: 100%, $backColor, $color, $size) {
+  width: $width;
+  padding-block: 10px;
+  background-color: $backColor;
+  color: $color;
+  border-radius: 20px;
+  font-size: $size;
+  font-weight: 600;
+  border: none;
+}
